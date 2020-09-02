@@ -1,0 +1,78 @@
+<!-- @format -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Desafío Ecomsur</title>
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous" />
+  </head>
+  <body>
+    <header>
+      <!--Start Nav-->
+      <nav class="navbar">
+        <span id="navbar-toggle">
+          <i class="fas fa-bars"></i>
+        </span>
+        <a href="#" id="logo">Dashboard Celula GV </a>
+        <ul id="main-nav">
+          <li>
+            <a class="nav-links" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              <i class="fas fa-envelope pr-2"></i>
+            </a>
+          </li>
+          <li>
+            <a class="nav-links" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              <i class="fas fa-bell pr-2"></i>
+              <span class="clearfix d-none d-sm-inline-block"></span>
+            </a>
+          </li>
+          <li>
+            <a class="nav-links" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              <i class="fas fa-user pr-2"></i>
+              <span class="clearfix d-none d-sm-inline-block"></span>
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <!--Start Botones-->
+    <section class="features">
+      <div class="feature-container">
+        <button class="btn-report" onClick="mostrar_imagen()">
+          <img
+            class="imgDasboard"
+            src="../img/reporte.png"
+            alt="
+          report"
+          />
+        </button>
+      </div>
+      <div class="feature-container">
+        <button id="log" class="btn-employee">
+          <img
+            class="imgDasboard"
+            src="../img/Empleados.png"
+            alt="
+          employee"
+          />
+        </button>
+      </div>
+      <div class="feature-container">
+        <button class="btn-calendar">
+          <img class="imgDasboard" src="../img/Calendario.png" alt="Calendario" />
+        </button>
+      </div>
+      <div class="feature-container">
+        <button class="btn-config"><img class="imgDasboard" src="../img/Config.png" alt="Configuracion" /></button>
+      </div>
+    </section>
+    <!--Start Cards-->
+    <section>
+      <div class="cards" id="result"></div>
+    </section>
+    <script src="./app.js"></script>
+  </body>
+</html>
